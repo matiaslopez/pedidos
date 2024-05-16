@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu página web</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS para estilos -->
+</head>
+<body>
+    <div class="container">
+        <!-- Primera página -->
+        <div id="pagina1" class="pagina pagina-actual">
+            <h1>Ingresa tu texto</h1>
+            <textarea id="textoInput" placeholder="Escribe tu texto aquí">
+➡️ Estás son nuestras ofertas disponibles hasta agotar stock
+
+👉Para realizar tu pedido envíanos una lista con los artículos indicando, si es para envío, la dirección de tu domicilio, si es para retirar, la sucursal de retiro, para terminar envía otro mensaje con la palabra Finalizado
+
+~ envíos
+💲costo: $1000
+💲compra mínima: $7000
+
+💵~Pagos en efectivo 5% de descuento
+
+Verduras
+-🥬Acelga 4paq $3800
+-🧄Ajo 2cab $1200
+-🌿Apio pl $1200
+-🍠Batata 3kg $1800
+-🍆 Berenjena 3kg $4500
+-🧅Cebolla 3kg $2800 / bolsa $15000
+-🧅Cebollin 3kg $2000
+-Cebolla Morada 2kg $3000
+-🌽Choclo 2kg $3800
+-Espinaca 4paq $3800
+-Hinojo kg $2000
+-🥬Lechuga 2kg $4000 / kg $3000
+-🫑Morron Rojo kg $4800
+-🫑Morron verde 2kg $4800 / kg $3500
+-🥔Papa 4kg $3000 / 8kg $4000 / bolsa $8000
+-🥒pepino kg $1800
+-Perejil paq $2500
+-Puerro paq $2500
+-Rabanito 2paq $1200
+-Radicheta 4paq $1000
+-remolacha 2paq $3000
+-Repollo blanco/rojo kg $2000
+-Rucula 3paq $1000
+-🍅Tomate cherry kg $3500
+-🍅Tomate perita kg $3000
+-Verdeo paq $2500
+-🥕Zanahoria 2kg $1800
+-Zapallito 2kg $3000
+-🎃Zapallo anco 3kg $1500 / bolsa $8000
+-🎃Zapallo caboutie 3kg $1500
+-Zuckini 2kg $3000
+
+Frutas
+-🍌Banana 3kg $3500
+-ciruela 2kg $4000
+-Kaki 4un $2500
+-🥝kiwi 2kg $6000
+-🍋Limon 2kg $1000 / cajón $9000
+-🍊Mandarina grande 3kg $3000
+-🍊Mandarina criolla 4kg $3000
+-🍎Manzana chica 3kg $3500
+-🍎Manzana selección 2kg $6000
+-🍏Manzana verde 3kg $3800
+-🍊Naranja de jugo 4kg $3000 / cajón $12000
+-🍊Naranja de ombligo 4kg $3500
+-🥑Palta kg $6000
+-🍐Pera 3kg $3000
+-Pomelo 4kg $3000
+-Pomelo rojo 3kg $3000
+-🍇Uva kg $2500
+
+Huevos
+2maples $8000 / 1 Maple $5000
+
+Envasados
+-Aceite de coco neutro 330ml $6000
+-Aceite de oliva virgen extra mendocino 1/2lt $12000
+-Bandeja de champiñones  $3000
+-Brote de soja $1800
+-Dulce de cayote $7000
+-Durazno en almíbar $1800
+-Mani con cáscara 3paq $2000
+-Mamon en almíbar $7000
+-Mermelada artesanal el celta (frutilla, frutilla light, frutos del bosque) $2800
+-Miel multifloral 1/2 kg $3000
+-Nuez pelada mariposa 120g $1800
+-Pasas de uva 190g $1000
+-Mix de granola kos food kg $6900
+-Jugo de arándanos 2bot $3000
+-Salsa de tomate 2bot $4500
+
+LOS PRODUCTOS DISPONIBLES SON ÚNICAMENTE LOS QUE FIGURAN EN LA LISTA
+            </textarea>
+            <button id="continuarBtn">Continuar</button>
+
+
+
+            <h1>Selecciona las opciones</h1>
+            <form id="formCheckboxes">
+                <!-- Contenedor para las categorías de productos -->
+                <div id="verdurasContainer" class="categoria-container"></div>
+                <div id="frutasContainer" class="categoria-container"></div>
+                <div id="huevosContainer" class="categoria-container"></div>
+                <div id="envasadosContainer" class="categoria-container"></div>
+            </form>
+            <!-- Lista de elementos no seleccionados -->
+            <div id="noSeleccionadosContainer">
+                <h2>Elementos no seleccionados</h2>
+                <div class="categoria-container">
+                    <ul id="listaNoSeleccionados"></ul>
+                </div>
+            </div>
+            <button id="enviarBtn">Generar Link</button>
+        </div>
+
+        <!-- Segunda página -->
+        <div id="pagina2" class="pagina">
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script> <!-- Archivo JavaScript para funcionalidades -->
+</body>
+</html>

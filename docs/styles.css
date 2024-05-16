@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.pagina {
+    display: none; /* Ocultar todas las páginas por defecto */
+}
+
+.pagina:first-child {
+    display: block; /* Mostrar la primera página por defecto */
+}
+
+h1 {
+    margin-top: 0;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los checkboxes */
+.checkbox-item {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el link generado */
+#linkGenerado {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+.categoria-container {
+    margin-bottom: 20px; /* Espacio entre las categorías */
+}
+
+/* input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+label {
+    display: inline-block;
+} */
+
+/* Eliminar los puntos de la lista */
+ul {
+    list-style-type: none;
+}
+
+/* Estilos para los checkboxes */
+input[type="checkbox"] {
+    display: inline-block; /* Mostrar los checkboxes uno debajo del otro */
+    margin-right: 5px; /* Espacio entre los checkboxes */
+}
+
+label {
+    display: inline-block; /* Mostrar las etiquetas uno debajo del otro */
+}
+
+.pagina {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.pagina-actual {
+    transform: translateX(0);
+}
+
+.pagina-siguiente {
+    transform: translateX(-100%);
+}
